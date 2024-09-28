@@ -30,9 +30,9 @@ const About = () => {
             viewport={{ once: false }}
           >
             <p className='text-black font-thin text-xl md:text-2xl'>
-              Welcome to [Your Firm's Name], where architecture meets artistry. Founded by [Founder’s Name] in [Year], our firm is dedicated to crafting innovative and sustainable designs that enhance the built environment and enrich the lives of those who inhabit it.
+              Welcome to <span>IDIRIS ARCHITECTS AND CONSTRUCTIONS</span>, where architecture meets artistry. Founded by IDRIS in 2020, our firm is dedicated to crafting innovative and sustainable designs that enhance the built environment and enrich the lives of those who inhabit it.
               <br /><br />
-              At [Your Firm's Name], we believe that every project tells a story. We take a collaborative approach, working closely with clients to understand their vision and aspirations. Our team of experienced architects and designers blends creativity with technical expertise to deliver spaces that are not only aesthetically pleasing but also functional and sustainable.
+              At Idris Architects and Constructions, we believe that every project tells a story. We take a collaborative approach, working closely with clients to understand their vision and aspirations. Our team of experienced architects and designers blends creativity with technical expertise to deliver spaces that are not only aesthetically pleasing but also functional and sustainable.
               <br />
               Our portfolio spans a diverse range of projects, including residential, commercial, and public spaces. We are passionate about using sustainable materials and practices to minimize our ecological footprint while creating timeless designs that stand the test of time.
               <br />

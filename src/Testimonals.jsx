@@ -2,21 +2,21 @@ import React from 'react';
 
 const testimonials = [
   {
-    name: 'Jane Doe',
+    name: 'Ramanujam',
     role: 'Customer',
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     feedback:
-      'Tailwind CSS has significantly improved our workflow, making our development process faster and more enjoyable. Highly recommend!',
+      '"Working with Idris Design and Construction was an incredible experience. From the very first consultation, Mohammed Idris and his team listened to our needs and transformed our ideas into a stunning home. They managed the entire process smoothly.',
   },
   {
-    name: 'John Smith',
+    name: 'Nithish kumar',
     role: 'Client',
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     feedback:
-      'Using React with Tailwind CSS has been a great experience. The speed and ease of creating responsive UIs is unmatched!',
+      'We hired Idris Design and Construction for the redesign of our corporate office space, and we were blown away by their creativity and professionalism. Mohammed’s vision for a modern, sustainable work environment was spot on.',
   },
   {
-    name: 'Emily Clark',
+    name: 'Mahesh',
     role: 'Partner',
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     feedback:
@@ -38,7 +38,7 @@ const TestimonialCards = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-xl p-8 h-[400px] transition-transform transform hover:scale-105 duration-300"
+            className="bg-white shadow-lg rounded-xl p-8 h-[400px] transition-transform transform hover:scale-105 duration-300 hover:bg-base-300"
           >
             <div className="flex items-center mb-6">
               <img
@@ -62,3 +62,4 @@ const TestimonialCards = () => {
 };
 
 export default TestimonialCards;
+ 

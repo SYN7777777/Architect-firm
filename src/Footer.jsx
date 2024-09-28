@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
@@ -8,11 +10,11 @@ const Footer = () => {
 
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-semibold text-white mb-4 tracking-wide">Our Company</h3>
+          <h3 className="text-2xl font-semibold text-white mb-4 tracking-wide">IDRIS DESIGN AND CONSTRUCTION</h3>
           <p className="mb-4 leading-relaxed">
             We strive to deliver top-notch services with quality and reliability. Our dedicated team is here to help you.
           </p>
-          <p className="text-sm">&copy; 2024 Company Name. All rights reserved.</p>
+          <p className="text-sm">&copy; 2024 IDRIS DESIGN AND CONSTRUCTION. All rights reserved.</p>
         </div>
 
         {/* Quick Links */}
@@ -20,29 +22,33 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold text-white mb-4 tracking-wide">Quick Links</h3>
           <ul className="space-y-3">
             <li>
-              <a href="#" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
-                About Us
-              </a>
+              <Link  className="hover:text-indigo-400 transition-all duration-300 ease-in-out ">
+              About Us
+              </Link> 
+    
+    
+            </li>
+          
+            <li>
+              <Link to="/projects" className="hover:text-indigo-400 transition-all duration-300 ease-in-out ">
+              projects
+              </Link> 
+    
+    
             </li>
             <li>
-              <a href="#" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
-                Services
-              </a>
+              <Link to="/services" className="hover:text-indigo-400 transition-all duration-300 ease-in-out ">
+              services
+              </Link> 
+    
+    
             </li>
             <li>
-              <a href="#" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
-                Privacy Policy
-              </a>
+              <Link to="/contact" className="hover:text-indigo-400 transition-all duration-300 ease-in-out ">
+              contact us
+              </Link> 
+    
+    
             </li>
           </ul>
         </div>
@@ -71,7 +77,7 @@ const Footer = () => {
 
       {/* Social Media Icons */}
       <div className="mt-12 flex justify-center space-x-6 text-gray-400">
-        <a href="#" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
+        <a href="https://instagram.com/mohamedidri_s" className="hover:text-indigo-400 transition-all duration-300 ease-in-out">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6 h-6" viewBox="0 0 24 24">
             <path d="M24 4.56v14.88c0 2.51-2.03 4.56-4.56 4.56H4.56C2.05 24 0 21.95 0 19.44V4.56C0 2.05 2.05 0 4.56 0h14.88C21.95 0 24 2.05 24 4.56zM9.49 19.56v-8.13h-2.66V8.44h2.66V6.56c0-2.31 1.42-3.56 3.5-3.56.99 0 1.84.07 2.09.1v2.43h-1.43c-1.13 0-1.35.54-1.35 1.32v1.73h2.71l-.36 2.99h-2.35v8.13H9.49z"/>
           </svg>

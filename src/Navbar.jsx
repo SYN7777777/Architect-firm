@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import { PiBuildingsThin } from "react-icons/pi";
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import logo4 from "./assets/logos.png";
+import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to handle menu open/close
-  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu open/close state
+    setIsOpen(!isOpen);
   };
 
-  // Handle scroll event to change the navbar background color
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setIsScrolled(true); // Navbar changes when scrolled down
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false); // Navbar reverts when at the top
+        setIsScrolled(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll); // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup on component unmount
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Dropdown animation variants for Framer Motion
   const dropdownVariants = {
     open: {
       height: 'auto',
@@ -56,9 +56,10 @@ const Navbar = () => {
     >
       <div className="container mx-auto p-4 flex justify-between items-center">
         <div className="flex items-center">
-          <PiBuildingsThin className="text-6xl font-bold opacity-90" />
-          <p className="ml-2 text-2xl font-semibold">Fx Architects</p>
+          <img src={logo4} alt="" className='w-24' />
+          <p className="ml-2 text-2xl font-semibold">IDRIS ARCHITECTS</p>
         </div>
+
         <button
           onClick={toggleMenu}
           className="focus:outline-none"
@@ -111,6 +112,17 @@ const Navbar = () => {
               className={`${
                 isScrolled ? 'text-black' : 'text-white'
               } text-2xl font-semibold uppercase hover:text-gray-600 transition duration-150`}
+              to="/"
+              onClick={toggleMenu}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`${
+                isScrolled ? 'text-black' : 'text-white'
+              } text-2xl font-semibold uppercase hover:text-gray-600 transition duration-150`}
               to="/about"
               onClick={toggleMenu}
             >
@@ -152,6 +164,17 @@ const Navbar = () => {
           </li>
         </ul>
       </motion.div>
+
+      {/* Floating WhatsApp Icon */}
+      <a
+        href="https://wa.me/919788898983" // Replace with your WhatsApp number
+        className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-400 transition duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <FaWhatsapp className="h-8 w-8" />
+      </a>
     </nav>
   );
 };

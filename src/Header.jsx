@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Image URLs
 const images = [
-  'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1350&q=80',
   'https://cdn.pixabay.com/photo/2019/10/26/11/01/evening-4579176_1280.jpg',
+  'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1350&q=80',
   'https://cdn.pixabay.com/photo/2019/01/13/11/49/iceland-3930162_1280.jpg',
   'https://cdn.pixabay.com/photo/2024/08/31/11/18/kitchen-9011264_1280.jpg',
   'https://cdn.pixabay.com/photo/2024/07/15/11/55/bedroom-8896574_1280.jpg',
@@ -60,6 +61,7 @@ const Header = () => {
         >
           We design your dreams
         </motion.p>
+        <Link to="/projects">
         <motion.button 
           className="bg-white text-black px-6 py-3 font-semibold rounded-md transition duration-300 hover:bg-gray-200"
           initial={{ opacity: 0, y: -30 }} 
@@ -69,6 +71,8 @@ const Header = () => {
         >
           Get Started
         </motion.button>
+        </Link>
+
       </div>
     </div>
   );
