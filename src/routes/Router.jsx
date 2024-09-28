@@ -7,7 +7,7 @@ import Home from "../Home";
 import About from "../About";
 import Ourservices from "../Ourservices";
 import Projects from "./Projects";
-import Contact from "../../Contact";
+import Contact from "../Contact";
 
 const router = createHashRouter([
   {
