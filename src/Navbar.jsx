@@ -167,7 +167,7 @@ const Navbar = () => {
 
       {/* Floating WhatsApp Icon */}
       <a
-        href="https://wa.me/919788898983" // Replace with your WhatsApp number
+        href="https://wa.me/918098222994" // Replace with your WhatsApp number
         className="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-400 transition duration-300"
         target="_blank"
         rel="noopener noreferrer"
